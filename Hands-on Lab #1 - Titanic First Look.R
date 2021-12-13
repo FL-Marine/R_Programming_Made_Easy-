@@ -153,16 +153,16 @@ prop.table(table(titanic_third$Sex))
 third_female_index <- titanic_third$Sex == "female"
 
 ## Survival rate 3rd class females ----
-prop.table(table(titanic_second$Survived[third_female_index]))
-# 3rd class female survival rate 42%
+prop.table(table(titanic_third$Survived[third_female_index]))
+# 3rd class female survival rate 50/50 chance.
 
 ## 3rd class male survival rate
-prop.table(table(titanic_second$Survived[!third_female_index]))
-# 49.5% survival rate among 2nd class males
+prop.table(table(titanic_third$Survived[!third_female_index]))
+# 4 13.5% survival rate among 2nd class males
 
 # 3rd class passengers insights ----
 # 1. 3rd class passengers make up almost half of total passengers
-# 2. Females in 3rd class had a 42% survival rate
-# 3. Males in 3rd class had a survival rate of almost 50%
+# 2. Females in 3rd class had a 50/50 survival rate
+# 3. Males in 3rd class had a survival rate of only 13.5%
 
 
